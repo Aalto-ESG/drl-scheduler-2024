@@ -1,0 +1,13 @@
+name: drl-scheduler
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.9, <3.10
+  - pip
+  - pytorch
+  - cudatoolkit=11.6
+  - pip:
+      - -r requirements-ray.txt
