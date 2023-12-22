@@ -28,6 +28,10 @@ Running with default settings:
 
 ``python experiment_runner``
 
+Running a smoke test with a small amount of training steps and shorter evaluations (does not produce good results, but is faster than running the full experiment):
+
+``python experiment_runner smoke_test=True``
+
 Depending on configuration, this will produce model checkpoints and evaluation results. 
 
 Processed results are also saved as csv files in ``plotting/csv`` for easy plotting.
